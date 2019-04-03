@@ -1,0 +1,44 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+import entidade.Aluguel;
+
+public class ProgramaAluguel {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		Aluguel[] aluguel = new Aluguel[10];
+		
+		System.out.println("Quantos quartos deseja alaguar: ");
+		int n = sc.nextInt();
+		
+		for (int i = 0 ; i < n ; i++) {
+			
+			System.out.println("Aluguel #" +i+ ":");
+			System.out.print("Digite o nome :");
+			sc.nextLine();
+			String nome = sc.nextLine();
+			System.out.print("Informe um email :");
+			String email = sc.nextLine();
+			System.out.print("Informe o quarto :");
+			int quarto = sc.nextInt();
+			
+			aluguel[quarto] = new Aluguel(nome, email);
+			
+		}
+		
+		System.out.println("");
+		System.out.println("Quartos alugados :");
+			
+		for (int i = 0; i < aluguel.length; i++) {
+			if(aluguel[i]!= null) {
+				System.out.println(i +" :"+ aluguel[i]);
+			}
+		}
+		
+		sc.close();
+	}
+}

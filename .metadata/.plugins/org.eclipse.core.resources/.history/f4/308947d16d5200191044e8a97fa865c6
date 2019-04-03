@@ -1,0 +1,20 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+import entidade.Aluguel;
+
+
+
+public class ProgramaAluguel {
+
+	public static void main(String[] args) {
+
+		Aluguel[] aluguel = new Aluguel[10];
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+
+		sc.close();
+	}
+}

@@ -1,0 +1,30 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+import entidade.Estudante;
+
+public class ProgramaAluguel {
+
+	public static void main(String[] args) {
+		Estudante[] e = null;
+		Scanner sc = new Scanner(System.in);
+		int[] quartos = new int[10];
+		
+		int n = sc.nextInt();
+		int[] estudante = new int[n];
+		
+		for(int i = 0; i < estudante.length; i++) {
+			sc.next();
+			String nome = sc.nextLine();
+			String email = sc.nextLine();
+			int quarto = sc.nextInt();
+			e[i] = new Estudante(nome, email, quarto);
+			
+		}
+		
+		
+		sc.close();
+	}
+
+}

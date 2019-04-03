@@ -1,0 +1,47 @@
+package entidade;
+
+public class Conta {
+
+	private int conta;
+	private String nome;
+	private double valor;
+
+	public Conta(int conta, String nome, double valor) {
+		this.conta = conta;
+		this.nome = nome;
+		this.valor = valor;
+	}
+
+	public Conta(int conta, String nome) {
+		this.conta = conta;
+		this.nome = nome;
+	}
+
+	public int getConta() {
+		return conta;
+	}
+
+	public void setConta(int conta) {
+		if(this.conta != 0){
+		System.out.println("Conta já existe !");
+		}
+		
+		else this.conta = conta;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	
+	
+	
+}

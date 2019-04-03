@@ -1,0 +1,34 @@
+package aplicacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entidade.Conta;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Entre com o numero da conta: ");
+		int conta = sc.nextInt();
+		System.out.print("Entre com o nome do titular da conta: ");
+		sc.nextLine();
+		String nome = sc.nextLine();
+		System.out.println("Entre com o valor inicial da conta: (n/y) ?");
+		String resp = sc.toString().valueOf(0);
+		if(resp.equals('y')) {
+			
+		}
+		double valor = sc.nextDouble();
+
+		Conta c1 = new Conta(conta, nome, valor);
+
+		System.out.println("");
+
+		System.out.printf("Conta: %d Nome %s Saldo %.2f ", conta, nome, valor);
+
+	}
+
+}

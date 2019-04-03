@@ -1,0 +1,39 @@
+package curso;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int maior;
+		int menor;
+
+		System.out.println("Entre com 3 numeros inteiros: ");
+		int n1 = sc.nextInt();
+		int n2 = sc.nextInt();
+		int n3 = sc.nextInt();
+
+		if (n1 > n2 && n1 > n3) {
+			maior = n1;
+			System.out.println("Maior é: " + maior);
+		}
+
+		else if (n2 > n3) {
+			maior = n2;
+			System.out.println("Maior é: " + maior);
+		}
+
+		else {
+			maior = n3;
+			System.out.println("Maior é: " + maior);
+		}
+
+		
+
+		sc.close();
+
+	}
+
+}

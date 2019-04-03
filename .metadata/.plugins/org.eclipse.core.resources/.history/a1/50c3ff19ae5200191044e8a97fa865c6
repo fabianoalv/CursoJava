@@ -1,0 +1,35 @@
+package aplicacao;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import entidade.Cliente;
+
+public class ClienteApp {
+
+	public static void main(String[] args) {
+		
+		List<Cliente> cliente = new ArrayList<>();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite a quantidade de cliente para cadastro :");
+		int qtd = sc.nextInt();
+		
+		for (int i = 0; i < qtd; i++ ) {
+			System.out.println("Digite o ID :");
+			int id = sc.nextInt();
+			System.out.println("Digite o nome :");
+			String nome = sc.nextLine();
+			System.out.println("Digite o endereco");
+			String endereco = sc.nextLine();
+			
+			cliente.add(new Cliente(id, nome, endereco));
+		}
+		
+		Cliente e = cliente.stream().filter(x -> x.getId()).findFirst().orElse(null);
+
+	}
+
+}

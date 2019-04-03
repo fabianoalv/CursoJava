@@ -1,0 +1,16 @@
+package aplicacao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import entidade.Cliente;
+
+public class ClienteApp {
+
+	public static void main(String[] args) {
+		
+		List<Cliente> cliente = new ArrayList<>();
+
+	}
+
+}

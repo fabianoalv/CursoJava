@@ -1,0 +1,21 @@
+
+public class ArrayBidimencional {
+
+	public static void main(String[] args) {
+		
+		int[][] a = new int[3][5];
+		
+		for (int i = 0; i < a.length; i++) {
+			for(int k = 0; k < a[i].length; k++) {
+				
+				a[i][k]+= 20;
+				
+				System.out.print(a[i][k] + "  ");
+			}
+			
+			System.out.println();
+		}
+
+	}
+
+}

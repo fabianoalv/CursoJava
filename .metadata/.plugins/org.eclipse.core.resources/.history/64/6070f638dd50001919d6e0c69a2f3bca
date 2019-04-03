@@ -1,0 +1,17 @@
+package curso;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		String original = "abcde FGHI ABC abc ";
+		String s1 = original.toUpperCase();
+		
+		System.out.println(original);
+		System.out.println(s1);
+
+	}
+
+}

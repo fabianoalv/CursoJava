@@ -1,0 +1,17 @@
+package aplicacao;
+
+import entidade.Funcionario;
+
+public class programaFuncionario {
+
+	public static void main(String[] args) {
+		
+		Funcionario f = new Funcionario(10, "Fabiano", 1000.00);
+		
+		System.out.println(f.getId()+" "+f.getNome()+" "+f.getSalario());
+		
+		f.aumentarSalario(20, 20);
+
+	}
+
+}
